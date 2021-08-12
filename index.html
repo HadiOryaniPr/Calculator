@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./Styles/CSS/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <input type="text" placeholder="0" name="displayresult" id="displayresult">
+        <input type="button" name="reset" value="C" onclick="reset()">
+      
+
+        <div class="row">
+                <input type="button" name="n7" value="7" onclick="addToCalculator(value)">
+                <input type="button" name="n8" value="8" onclick="addToCalculator(value)">
+                <input type="button" name="n9" value="9" onclick="addToCalculator(value)">
+                <input type="button" name="plus" value="+" onclick="addToCalculator(value)">
+                <input type="button" name="power" value="^" onclick="mathCalculate('power')">
+                <input type="button" name="abs" value="|x|" onclick="mathCalculate('abs')">
+               
+            </div>
+            
+            <div class="row">
+                <input type="button" name="n4" value="4" onclick="addToCalculator(value)">
+                <input type="button" name="n5" value="5" onclick="addToCalculator(value)">
+                <input type="button" name="n6" value="6" onclick="addToCalculator(value)">
+                <input type="button" name="minus" value="-" onclick="addToCalculator(value)">
+                <input type="button" name="round" value="R" onclick="mathCalculate('round')">
+                <input type="button" name="floor" value="FL" onclick="mathCalculate('floor')">
+
+            </div>
+            
+            <div class="row">
+                <input type="button" name="n1" value="1" onclick="addToCalculator(value)">
+                <input type="button" name="n2" value="2" onclick="addToCalculator(value)">
+                <input type="button" name="n3" value="3" onclick="addToCalculator(value)">
+                <input type="button" name="multiplication" value="*" onclick="addToCalculator(value)">
+                <input type="button" name="sqrt" value="&radic;" onclick="mathCalculate('sqrt')">
+                <input type="button" name="ceil" value="CE" onclick="mathCalculate('ceil')">
+            </div>
+            
+            <div class="row">
+                <input type="button" name="n0" value="0" onclick="addToCalculator(value)">
+                <input type="button" name="dot" value="." onclick="addToCalculator(value)">
+                <input type="button" name="division " value="/" onclick="addToCalculator(value)">
+                <input type="button" name="Equal" value="=" onclick="finilize()">
+                <span>JS Calculator</span>
+            </div>     
+
+    <script src="./JS/app.js"></script>
+</body>
+</html>

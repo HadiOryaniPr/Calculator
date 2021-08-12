@@ -1,0 +1,42 @@
+@import "variablse";
+@import "mixnins";
+
+* {
+  @include overal;
+}
+
+body {
+  background: $bgColor;
+}
+
+.container {
+  @include containerStyle;
+
+  #displayresult {
+    @include TStyle(2.1rem, $primaryColor, 1rem, normal);
+    display: inline-block;
+    width: 82%;
+    background: transparent;
+    height: 1.3rem;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid $primaryColor;
+    text-align: right;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  input[type="button"] {
+    @include TStyle(2rem, $primaryColor, 1.1rem, 600);
+    margin: 0.4rem;
+    background: $bgColor;
+    border: 0;
+    cursor: pointer;
+  }
+
+  span {
+    @include TStyle(1.5rem, $primaryColor, 0.3rem, bold);
+  }
+}
