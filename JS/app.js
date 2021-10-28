@@ -4,7 +4,7 @@ let power = false;
 function addToCalculator(value) {
   showResult.value += value;
   if (power) {
-    var numbers = showResult.value.split("^");
+    let numbers = showResult.value.split("^");
     showResult.value = Math.pow(numbers[0], numbers[1]);
     power = false;
   }
