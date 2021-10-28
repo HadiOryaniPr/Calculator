@@ -1,4 +1,4 @@
-var showResult = document.getElementById("displayresult");
+let showResult = document.getElementById("displayresult");
 var power = false;
 
 function addToCalculator(value) {
