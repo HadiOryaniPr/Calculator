@@ -1,5 +1,5 @@
 let showResult = document.getElementById("displayresult");
-var power = false;
+let power = false;
 
 function addToCalculator(value) {
   showResult.value += value;
