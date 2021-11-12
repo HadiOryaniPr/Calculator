@@ -9,7 +9,7 @@ function addToCalculator(value) {
     power = false;
   }
 }
-
+ 
 function reset() {
   showResult.value = "";
 }
